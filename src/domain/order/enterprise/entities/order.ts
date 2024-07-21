@@ -24,8 +24,16 @@ export class Order extends AggregateRoot<OrderProps> {
     return this.props.deliveryAddress;
   }
 
+  set deliveryAddress(deliveryAddress: string) {
+    this.props.deliveryAddress = deliveryAddress;
+  }
+
   get deadline() {
     return this.props.deadline;
+  }
+
+  set deadline(deadline: Date) {
+    this.props.deadline = deadline;
   }
 
   static create(
