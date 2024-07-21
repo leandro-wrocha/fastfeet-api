@@ -3,11 +3,11 @@ import { randomUUID } from 'node:crypto';
 export class UniqueEntityID {
   private value: string;
 
-  to_string() {
+  toString() {
     return this.value;
   }
 
-  to_value() {
+  toValue() {
     return this.value;
   }
 
@@ -16,6 +16,6 @@ export class UniqueEntityID {
   }
 
   equals(id: UniqueEntityID) {
-    return id.to_value() === this.value;
+    return id.toValue() === this.value;
   }
 }
