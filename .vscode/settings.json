@@ -1,0 +1,11 @@
+{
+  "workbench.colorTheme": "Tokyo Night",
+  "eslint.format.enable": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.fontWeight": "bold",
+  "window.zoomLevel": -1,
+  "console-ninja.featureSet": "Community",
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "bearded-icons",
+}
