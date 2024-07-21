@@ -1,13 +1,13 @@
 import { InMemoryOrdersRepository } from '@test/repositories/in-memory-orders-repository';
 import { CreateOrderUseCase } from './create-order';
 
-let inMemoryCreateOrdersRepository: InMemoryOrdersRepository;
+let inMemoryOrdersRepository: InMemoryOrdersRepository;
 let sut: CreateOrderUseCase;
 
-describe('Create Question', () => {
+describe('Create Order', () => {
   beforeEach(() => {
-    inMemoryCreateOrdersRepository = new InMemoryOrdersRepository();
-    sut = new CreateOrderUseCase(inMemoryCreateOrdersRepository);
+    inMemoryOrdersRepository = new InMemoryOrdersRepository();
+    sut = new CreateOrderUseCase(inMemoryOrdersRepository);
   });
 
   it('should be able create a order', async () => {
@@ -19,6 +19,6 @@ describe('Create Question', () => {
     });
 
     expect(result.isRight()).toBe(true);
-    expect(inMemoryCreateOrdersRepository.items).length(1);
+    expect(inMemoryOrdersRepository.items).length(1);
   });
 });
