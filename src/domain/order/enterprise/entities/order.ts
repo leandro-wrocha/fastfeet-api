@@ -1,6 +1,6 @@
 import { AggregateRoot } from '@src/core/entities/aggregate-root';
 import { UniqueEntityID } from '@src/core/entities/unique-entity-id';
-import { Optional } from '@src/core/types/optinonal';
+import { Optional } from '@src/core/types/optional';
 import { Address } from './value-objects/address';
 import { Deadline } from './value-objects/deadline';
 
